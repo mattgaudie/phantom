@@ -1,0 +1,23 @@
+{
+    "create_time": "2020-10-28T08:34:29.740827+00:00",
+    "custom_function_id": "d1a7d7609830b91734d3be46eae982e214214bbd",
+    "description": "URL encode a string",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "input_string",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "url_string",
+            "description": ""
+        }
+    ],
+    "platform_version": "4.9.37880"
+}

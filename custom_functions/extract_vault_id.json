@@ -1,0 +1,25 @@
+{
+    "create_time": "2020-11-02T22:33:47.417606+00:00",
+    "custom_function_id": "1583e4bf5597a3315b88b63ec0ed235670851220",
+    "description": "",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "container_id",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [
+                "vault id"
+            ],
+            "data_path": "*.vaultId",
+            "description": ""
+        }
+    ],
+    "platform_version": "4.9.37880"
+}

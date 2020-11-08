@@ -1,0 +1,15 @@
+{
+    "create_time": "2020-10-27T04:06:08.455652+00:00",
+    "custom_function_id": "6a129be26fb269199964a84453d340a36daf792f",
+    "description": "Create an epoch time to add to artifacts, containers, comments and more.",
+    "draft_mode": false,
+    "inputs": [],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "epoch_time",
+            "description": ""
+        }
+    ],
+    "platform_version": "4.9.37880"
+}

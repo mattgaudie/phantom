@@ -1,0 +1,30 @@
+{
+    "create_time": "2020-10-22T23:25:21.260847+00:00",
+    "custom_function_id": "d0d334e6d7f8e42c95b63d79872e3dd0e7d6e5ae",
+    "description": "Assigns workbooks as actions to give granular control on the tasks responders have to do on a case by case basis.",
+    "draft_mode": false,
+    "inputs": [
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "container_id",
+            "placeholder": ""
+        },
+        {
+            "contains_type": [],
+            "description": "",
+            "input_type": "item",
+            "name": "workbook_name",
+            "placeholder": ""
+        }
+    ],
+    "outputs": [
+        {
+            "contains_type": [],
+            "data_path": "success",
+            "description": ""
+        }
+    ],
+    "platform_version": "4.9.37880"
+}
