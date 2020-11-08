@@ -1,0 +1,1069 @@
+{
+    "blockly": false,
+    "blockly_xml": "<xml></xml>",
+    "category": "Uncategorized",
+    "coa": {
+        "data": {
+            "clean": true,
+            "code_block": "",
+            "description": "",
+            "hash": "4f4b46d673330ef53cc46a1cb05bd27e001df3e1",
+            "joint": {
+                "cells": [
+                    {
+                        "0": "S",
+                        "1": "T",
+                        "2": "A",
+                        "3": "R",
+                        "4": "T",
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "fill": "#000000",
+                                "stroke": "#5C6773"
+                            },
+                            ".color-band": {
+                                "fill": "#3C444D"
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".title": {
+                                "ref-x": 33,
+                                "ref-y": 8,
+                                "text": "START"
+                            },
+                            "g.delete": {
+                                "display": "none"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.icon image": {
+                                "ref-x": 13,
+                                "xlink:href": "/inc/coa/img/block_icon_start.svg"
+                            },
+                            "g.notes": {
+                                "display": "block"
+                            }
+                        },
+                        "block_code": "def on_start(container):\n    phantom.debug('on_start() called')\n    \n    # call 'extract_ioc_1' block\n    extract_ioc_1(container=container)\n\n    return",
+                        "callback_code": "# read-only block view not available",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": false,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "0916eaaa-e8b1-46df-8708-684210ede981",
+                        "inPorts": [],
+                        "join_code": "# read-only block view not available",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 15,
+                        "line_start": 7,
+                        "name": "",
+                        "notes": "",
+                        "number": 0,
+                        "order": 1,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 100,
+                            "y": 100
+                        },
+                        "previous_function": "",
+                        "previous_name": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 54,
+                            "width": 80
+                        },
+                        "state": "start",
+                        "status": "",
+                        "title": "START",
+                        "type": "coa.StartEnd",
+                        "warn": false,
+                        "z": 1
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#818D99",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#818D99",
+                                "stroke": "#818D99"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "933dc922-2b66-43f6-8959-0805f7e640ab",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "0916eaaa-e8b1-46df-8708-684210ede981",
+                            "selector": "> g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "0f694e21-1ca2-4863-b227-17d435ac2216",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 3
+                    },
+                    {
+                        "action": "extract ioc",
+                        "action_type": "generic",
+                        "active": false,
+                        "active_keys": {},
+                        "active_values": {
+                            "container_id": "container:id",
+                            "custom_remap_json": "{}",
+                            "file_type": "txt",
+                            "is_structured": "",
+                            "label": "",
+                            "max_artifacts": "",
+                            "parse_domains": true,
+                            "remap_cef_fields": "Do not apply CEF -> CIM remapping, only apply custom remap",
+                            "run_automation": true,
+                            "severity": "medium",
+                            "text": "artifact:*.cef.bodyText",
+                            "vault_id": ""
+                        },
+                        "angle": 0,
+                        "app": "Parser",
+                        "appid": "4004f489-1826-44a1-af12-9c74eea82eb0",
+                        "approver": "",
+                        "assets": [
+                            {
+                                "action": "extract ioc",
+                                "actions": [
+                                    "extract ioc"
+                                ],
+                                "active": true,
+                                "app_name": "Parser",
+                                "app_version": "2.0.23",
+                                "appid": "4004f489-1826-44a1-af12-9c74eea82eb0",
+                                "asset_name": "email_parser",
+                                "config_type": "asset",
+                                "count": 0,
+                                "fields": {
+                                    "container_id": "container:id",
+                                    "custom_remap_json": "{}",
+                                    "file_type": "txt",
+                                    "is_structured": "",
+                                    "label": "",
+                                    "max_artifacts": "",
+                                    "parse_domains": true,
+                                    "remap_cef_fields": "Do not apply CEF -> CIM remapping, only apply custom remap",
+                                    "run_automation": true,
+                                    "severity": "medium",
+                                    "text": "artifact:*.cef.bodyText",
+                                    "vault_id": ""
+                                },
+                                "has_app": true,
+                                "id": 6,
+                                "loaded": false,
+                                "missing": false,
+                                "name": "email_parser",
+                                "output": [
+                                    {
+                                        "data_path": "action_result.status",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "success",
+                                            "failed"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.container_id",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            1776
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.file_type",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "txt",
+                                            "email",
+                                            "pdf",
+                                            "docx",
+                                            "csv",
+                                            "html"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.is_structured",
+                                        "data_type": "boolean",
+                                        "example_values": [
+                                            true,
+                                            false
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.label",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "Events"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.max_artifacts",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            100
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.parse_domains",
+                                        "data_type": "boolean",
+                                        "example_values": [
+                                            true,
+                                            false
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.run_automation",
+                                        "data_type": "boolean",
+                                        "example_values": [
+                                            true,
+                                            false
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.severity",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "low"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.text",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "Test string to extract IOCs from"
+                                        ]
+                                    },
+                                    {
+                                        "contains": [
+                                            "vault id"
+                                        ],
+                                        "data_path": "action_result.parameter.vault_id",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "3d6ef06ab51be5a86cdfaba246db2c2ab1d07795"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.remap_cef_fields",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.parameter.custom_remap_json",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.data",
+                                        "data_type": "string"
+                                    },
+                                    {
+                                        "data_path": "action_result.summary.artifacts_found",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            13
+                                        ]
+                                    },
+                                    {
+                                        "column_name": "Container ID",
+                                        "column_order": 0,
+                                        "data_path": "action_result.summary.container_id",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            1776
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "action_result.message",
+                                        "data_type": "string",
+                                        "example_values": [
+                                            "Container id: 52069, Artifacts found: 27"
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            2
+                                        ]
+                                    },
+                                    {
+                                        "data_path": "summary.total_objects_successful",
+                                        "data_type": "numeric",
+                                        "example_values": [
+                                            1
+                                        ]
+                                    }
+                                ],
+                                "parameters": {
+                                    "container_id": {
+                                        "data_type": "numeric",
+                                        "default": null,
+                                        "description": "Add created artifacts to this container",
+                                        "key": "container_id",
+                                        "order": 6,
+                                        "required": false
+                                    },
+                                    "custom_remap_json": {
+                                        "data_type": "string",
+                                        "default": "{}",
+                                        "description": "Custom set of CEF field name mappings. This is a serialized json dictionary (json.dumps) of Key/Value pairs where Key is an existing field name and Value is the resultant name (not applicable to .eml filetype)",
+                                        "key": "custom_remap_json",
+                                        "order": 8,
+                                        "required": false
+                                    },
+                                    "file_type": {
+                                        "data_type": "string",
+                                        "default": null,
+                                        "description": "Type of the file",
+                                        "key": "file_type",
+                                        "order": 1,
+                                        "required": false,
+                                        "value_list": [
+                                            "txt",
+                                            "email",
+                                            "pdf",
+                                            "docx",
+                                            "csv",
+                                            "html"
+                                        ]
+                                    },
+                                    "is_structured": {
+                                        "data_type": "boolean",
+                                        "default": false,
+                                        "description": "Use first row of CSV file as field names",
+                                        "key": "is_structured",
+                                        "order": 3,
+                                        "required": false
+                                    },
+                                    "label": {
+                                        "data_type": "string",
+                                        "default": null,
+                                        "description": "Add container to this label",
+                                        "key": "label",
+                                        "order": 4,
+                                        "required": false
+                                    },
+                                    "max_artifacts": {
+                                        "data_type": "numeric",
+                                        "default": null,
+                                        "description": "Maximum number of artifacts (not applicable to .eml filetype)",
+                                        "key": "max_artifacts",
+                                        "order": 5,
+                                        "required": false
+                                    },
+                                    "parse_domains": {
+                                        "data_type": "boolean",
+                                        "default": true,
+                                        "description": "Parse domains from artifacts",
+                                        "key": "parse_domains",
+                                        "order": 11,
+                                        "required": false
+                                    },
+                                    "remap_cef_fields": {
+                                        "data_type": "string",
+                                        "default": "Do not apply CEF -> CIM remapping, only apply custom remap",
+                                        "description": "Remap the CEF fields with new field names; Optionally, also apply an internal CEF -> CIM field name mapping. Note: (source|destination)Address will be mapped to (src|dest)_ip respectively instead of src|dest (not applicable to .eml filetype)",
+                                        "key": "remap_cef_fields",
+                                        "order": 7,
+                                        "required": false,
+                                        "value_list": [
+                                            "Do not apply CEF -> CIM remapping, only apply custom remap",
+                                            "Apply CEF -> CIM remapping before applying custom remap",
+                                            "Apply custom remap and apply CEF -> CIM remapping after"
+                                        ]
+                                    },
+                                    "run_automation": {
+                                        "data_type": "boolean",
+                                        "default": true,
+                                        "description": "Enable run_automation for newly created artifacts",
+                                        "key": "run_automation",
+                                        "order": 9,
+                                        "required": false
+                                    },
+                                    "severity": {
+                                        "data_type": "string",
+                                        "default": "medium",
+                                        "description": "Severity for the newly created artifacts",
+                                        "key": "severity",
+                                        "order": 10,
+                                        "required": false
+                                    },
+                                    "text": {
+                                        "data_type": "string",
+                                        "default": null,
+                                        "description": "Raw text from which to extract IOCs",
+                                        "key": "text",
+                                        "order": 2,
+                                        "required": false
+                                    },
+                                    "vault_id": {
+                                        "contains": [
+                                            "vault id"
+                                        ],
+                                        "data_type": "string",
+                                        "default": null,
+                                        "description": "Vault ID",
+                                        "key": "vault_id",
+                                        "order": 0,
+                                        "primary": true,
+                                        "required": false
+                                    }
+                                },
+                                "product_name": "Parser",
+                                "product_vendor": "Splunk",
+                                "targets": "6",
+                                "type": "information"
+                            }
+                        ],
+                        "attrs": {
+                            ".action": {
+                                "text": "extract ioc"
+                            },
+                            ".background": {
+                                "fill": "#000000",
+                                "stroke": "#5C6773"
+                            },
+                            ".color-band": {
+                                "fill": "#3C444D"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "opacity": 0,
+                                "ref-x": 5,
+                                "ref-y": 105,
+                                "text": "Configuring now"
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".title": {
+                                "text": "Generic"
+                            },
+                            "g.delete": {
+                                "display": "none"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.icon image": {
+                                "xlink:href": "/inc/coa/img/block_icon_generic.svg"
+                            },
+                            "g.notes": {
+                                "display": "block"
+                            }
+                        },
+                        "block_code": "def extract_ioc_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):\n    phantom.debug('extract_ioc_1() called')\n\n    id_value = container.get('id', None)\n\n    # collect data for 'extract_ioc_1' call\n    container_data = phantom.collect2(container=container, datapath=['artifact:*.cef.bodyText', 'artifact:*.id'])\n\n    parameters = []\n    \n    # build parameters list for 'extract_ioc_1' call\n    for container_item in container_data:\n        parameters.append({\n            'vault_id': \"\",\n            'file_type': \"txt\",\n            'text': container_item[0],\n            'is_structured': \"\",\n            'label': \"\",\n            'max_artifacts': \"\",\n            'container_id': id_value,\n            'remap_cef_fields': \"Do not apply CEF -> CIM remapping, only apply custom remap\",\n            'custom_remap_json': \"{}\",\n            'run_automation': \"true\",\n            'severity': \"medium\",\n            'parse_domains': \"true\",\n            # context (artifact id) is added to associate results with the artifact\n            'context': {'artifact_id': container_item[1]},\n        })\n\n    phantom.act(action=\"extract ioc\", parameters=parameters, assets=['email_parser'], callback=playbook_local_eh_investigate_email_iocs_1, name=\"extract_ioc_1\")\n\n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": true,
+                        "color": "",
+                        "connected_to_start": true,
+                        "connection_name": "",
+                        "connection_type": "",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "delay": 0,
+                        "description": "",
+                        "has_custom": false,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "0f694e21-1ca2-4863-b227-17d435ac2216",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 48,
+                        "line_start": 15,
+                        "message": "Configuring now",
+                        "name": "extract ioc",
+                        "notes": "",
+                        "number": 1,
+                        "order": 2,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 280,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "extract_ioc_1",
+                        "required_params": {},
+                        "reviewer": "",
+                        "show_number": false,
+                        "size": {
+                            "height": 100,
+                            "width": 180
+                        },
+                        "state": "app_action_assets",
+                        "status": "",
+                        "title": "Generic",
+                        "type": "coa.Action",
+                        "warn": "",
+                        "z": 5
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#818D99",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#818D99",
+                                "stroke": "#818D99"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "5df2820e-a273-4d81-818a-91a8e4aaaf09",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "0f694e21-1ca2-4863-b227-17d435ac2216",
+                            "selector": "> g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "3cb243c4-78be-4043-ac72-24e4c9d4eb72",
+                            "selector": ".port-body[type=\"input\"]"
+                        },
+                        "type": "link",
+                        "z": 6
+                    },
+                    {
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "fill": "#000000",
+                                "stroke": "#5C6773"
+                            },
+                            ".color-band": {
+                                "fill": "#3C444D"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".message": {
+                                "opacity": 0,
+                                "ref-x": 5,
+                                "ref-y": 105,
+                                "text": "Configuring now"
+                            },
+                            ".outPorts>.port-out": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".outPorts>.port-out>.port-body": {
+                                "port": {
+                                    "id": "out",
+                                    "type": "out"
+                                }
+                            },
+                            ".playbook": {
+                                "text": "eh_investigate_email_iocs"
+                            },
+                            ".scmName": {
+                                "text": "local"
+                            },
+                            ".title": {
+                                "text": "Playbook"
+                            },
+                            "g.branch image": {
+                                "opacity": 1
+                            },
+                            "g.delete": {
+                                "display": "none"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.notes": {
+                                "display": "block"
+                            }
+                        },
+                        "block_code": "def playbook_local_eh_investigate_email_iocs_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):\n    phantom.debug('playbook_local_eh_investigate_email_iocs_1() called')\n    \n    # call playbook \"local/eh_investigate_email_iocs\", returns the playbook_run_id\n    playbook_run_id = phantom.playbook(playbook=\"local/eh_investigate_email_iocs\", container=container)\n\n    return",
+                        "callback_code": "",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": true,
+                        "connection_name": "extract ioc",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": false,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "3cb243c4-78be-4043-ac72-24e4c9d4eb72",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 56,
+                        "line_start": 48,
+                        "message": "Configuring now",
+                        "name": "eh_investigate_email_iocs",
+                        "notes": "",
+                        "number": 1,
+                        "order": 3,
+                        "outPorts": [
+                            "out"
+                        ],
+                        "playbook": "local/eh_investigate_email_iocs",
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 580,
+                            "y": 80
+                        },
+                        "previous_function": "",
+                        "previous_name": "playbook_local_eh_investigate_email_iocs_1",
+                        "scmName": "local",
+                        "show_number": false,
+                        "size": {
+                            "height": 100,
+                            "width": 180
+                        },
+                        "state": "callplaybook",
+                        "status": "",
+                        "title": "Playbook",
+                        "type": "coa.CallPlaybook",
+                        "warn": false,
+                        "z": 7
+                    },
+                    {
+                        "0": "E",
+                        "1": "N",
+                        "2": "D",
+                        "active": false,
+                        "angle": 0,
+                        "attrs": {
+                            ".background": {
+                                "fill": "#000000",
+                                "stroke": "#5C6773"
+                            },
+                            ".color-band": {
+                                "fill": "#3C444D"
+                            },
+                            ".inPorts>.port-in": {
+                                "ref": ".background",
+                                "ref-x": 0.5
+                            },
+                            ".inPorts>.port-in>.port-body": {
+                                "port": {
+                                    "id": "in",
+                                    "type": "in"
+                                }
+                            },
+                            ".title": {
+                                "text": "END"
+                            },
+                            "g.delete": {
+                                "display": "none"
+                            },
+                            "g.error": {
+                                "opacity": 0
+                            },
+                            "g.icon image": {
+                                "xlink:href": "/inc/coa/img/block_icon_end.svg"
+                            },
+                            "g.notes": {
+                                "display": "block"
+                            }
+                        },
+                        "block_code": "def on_finish(container, summary):\n    phantom.debug('on_finish() called')\n    # This function is called after all actions are completed.\n    # summary of all the action and/or all details of actions\n    # can be collected here.\n\n    # summary_json = phantom.get_summary()\n    # if 'result' in summary_json:\n        # for action_result in summary_json['result']:\n            # if 'action_run_id' in action_result:\n                # action_results = phantom.get_action_results(action_run_id=action_result['action_run_id'], result_data=False, flatten=False)\n                # phantom.debug(action_results)\n\n    return",
+                        "callback_code": "# read-only block view not available",
+                        "callback_start": 1,
+                        "callsback": false,
+                        "connected_to_start": false,
+                        "connection_name": "extract ioc",
+                        "connection_type": "action",
+                        "custom_callback": "",
+                        "custom_code": "",
+                        "custom_join": "",
+                        "custom_name": "",
+                        "description": "",
+                        "has_custom": false,
+                        "has_custom_block": false,
+                        "has_custom_callback": false,
+                        "has_custom_join": false,
+                        "id": "d84a8417-b29e-4ed4-92d1-65da09e875a4",
+                        "inPorts": [
+                            "in"
+                        ],
+                        "join_code": "# read-only block view not available",
+                        "join_optional": [],
+                        "join_start": 1,
+                        "line_end": 69,
+                        "line_start": 56,
+                        "name": "",
+                        "notes": "",
+                        "number": 0,
+                        "order": 4,
+                        "outPorts": [],
+                        "ports": {
+                            "groups": {
+                                "in": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "left"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "left"
+                                    }
+                                },
+                                "out": {
+                                    "attrs": {
+                                        ".port-body": {
+                                            "fill": "#fff",
+                                            "magnet": true,
+                                            "r": 10,
+                                            "stroke": "#000"
+                                        },
+                                        ".port-label": {
+                                            "fill": "#000"
+                                        }
+                                    },
+                                    "label": {
+                                        "position": {
+                                            "args": {
+                                                "y": 10
+                                            },
+                                            "name": "right"
+                                        }
+                                    },
+                                    "position": {
+                                        "name": "right"
+                                    }
+                                }
+                            }
+                        },
+                        "position": {
+                            "x": 920,
+                            "y": 100
+                        },
+                        "previous_function": "",
+                        "previous_name": "",
+                        "show_number": true,
+                        "size": {
+                            "height": 54,
+                            "width": 80
+                        },
+                        "state": "end",
+                        "status": "",
+                        "title": "END",
+                        "type": "coa.StartEnd",
+                        "warn": false,
+                        "z": 8
+                    },
+                    {
+                        "attrs": {
+                            ".connection": {
+                                "stroke": "#818D99",
+                                "stroke-width": 2
+                            },
+                            ".marker-target": {
+                                "d": "M 10 0 L 0 5 L 10 10 z",
+                                "fill": "#818D99",
+                                "stroke": "#818D99"
+                            }
+                        },
+                        "connector": {
+                            "args": {
+                                "radius": 5
+                            },
+                            "name": "rounded"
+                        },
+                        "endDirections": [
+                            "left"
+                        ],
+                        "id": "9066e3cf-19f6-4a04-b4b8-2bde17d4a187",
+                        "router": {
+                            "name": "metro"
+                        },
+                        "source": {
+                            "id": "3cb243c4-78be-4043-ac72-24e4c9d4eb72",
+                            "selector": "> g:nth-child(1) > g:nth-child(2) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "startDirections": [
+                            "right"
+                        ],
+                        "target": {
+                            "id": "d84a8417-b29e-4ed4-92d1-65da09e875a4",
+                            "selector": "> g:nth-child(1) > g:nth-child(1) > g:nth-child(1) > circle:nth-child(1)"
+                        },
+                        "type": "link",
+                        "z": 9
+                    }
+                ]
+            },
+            "notes": ""
+        },
+        "python_version": "2.7",
+        "schema": 4,
+        "version": "4.9.37880"
+    },
+    "create_time": "2020-10-28T03:59:29.169230+00:00",
+    "draft_mode": false,
+    "labels": [
+        "*"
+    ],
+    "tags": []
+}
