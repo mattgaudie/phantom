@@ -1,7 +1,7 @@
 {
-    "create_time": "2020-11-02T22:33:47.417606+00:00",
-    "custom_function_id": "1583e4bf5597a3315b88b63ec0ed235670851220",
-    "description": "",
+    "create_time": "2020-11-16T09:40:58.252906+00:00",
+    "custom_function_id": "31c10ea86ab3d22f4c1e8ea3442396102982414c",
+    "description": "Extract vault id's as a data path to output to additional blocks.",
     "draft_mode": false,
     "inputs": [
         {
@@ -21,5 +21,5 @@
             "description": ""
         }
     ],
-    "platform_version": "4.9.37880"
+    "platform_version": "4.9.39220"
 }
