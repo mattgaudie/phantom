@@ -1,6 +1,6 @@
 def extract_vault_id(container_id=None, **kwargs):
     """
-    Extract vault id's as a data path to output to additional blocks
+    Extract vault id's as a data path to output to additional blocks.
     
     Args:
         container_id
